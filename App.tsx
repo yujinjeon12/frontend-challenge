@@ -24,6 +24,7 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+import Icon from 'react-native-vector-icons/Ionicons';
 
 type SectionProps = PropsWithChildren<{
   title: string;
@@ -41,6 +42,7 @@ function Section({children, title}: SectionProps): React.JSX.Element {
           },
         ]}>
         {title}
+        <Icon name="home" size={30} color="#900" />
       </Text>
       <Text
         style={[
